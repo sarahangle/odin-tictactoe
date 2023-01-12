@@ -1,0 +1,63 @@
+body {
+    background-color: aquamarine;
+    font-size: 18pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, .information {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 30pt;
+    margin: 0;
+}
+
+.information {
+    margin-bottom: 15px;
+}
+
+.game-board {
+    display: grid;
+    background-color: black;
+    grid-template-rows: repeat(3,150px);
+    grid-template-columns: repeat(3,150px);
+    gap: 2px;
+}
+
+.board-square {
+    background-color: aquamarine;
+}
+
+.board-square.empty:hover {
+    filter: brightness(85%);
+}
+
+.board-square.ex{
+    background-image: url(images/x.svg);
+}
+
+.board-square.oh{
+    background-image: url(images/o.svg);
+    background-size: 92%;
+    background-position: center;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: none;
+}
+
+button.active {
+    display: flex;
+}
